@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Internet Programming Course Summary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#top">Internet Programming</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#overview">Overview</a>
+        <a href="#weekly-plan">Weekly Plan</a>
+        <a href="#skills">Skills</a>
+        <a href="#labs">Labs</a>
+        <a href="#project">Final Project</a>
+      </div>
+    </nav>
+
+    <section id="top" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Front-End Web Development Course</p>
+        <h1>Internet Programming Course Summary</h1>
+        <p class="hero-text">
+          A practical course that starts from web foundations and gradually builds toward
+          modern, API-driven, interactive web applications using HTML, CSS, JavaScript,
+          TypeScript, Git, and GitHub Pages deployment.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#weekly-plan">View Weekly Plan</a>
+          <a class="btn secondary" href="#project">See Final Project</a>
+        </div>
+      </div>
+      <div class="hero-card" aria-label="Course snapshot">
+        <h2>Course Snapshot</h2>
+        <ul>
+          <li><strong>Duration:</strong> 14 weeks</li>
+          <li><strong>Focus:</strong> Front-end programming</li>
+          <li><strong>Tools:</strong> VS Code, browser DevTools, Git, GitHub</li>
+          <li><strong>Outcome:</strong> Published interactive website</li>
+        </ul>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="overview" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Course Purpose</p>
+        <h2>What this course covers</h2>
+      </div>
+      <div class="grid three">
+        <article class="info-card">
+          <span class="card-icon">🌐</span>
+          <h3>Web Foundations</h3>
+          <p>
+            The course begins with the structure of the web: clients, servers, DNS,
+            HTTP/HTTPS, static pages, dynamic pages, and modern web architecture.
+          </p>
+        </article>
+        <article class="info-card">
+          <span class="card-icon">🧱</span>
+          <h3>Front-End Building Blocks</h3>
+          <p>
+            HTML5 is used for structure, CSS3 for layout and responsive design, and
+            JavaScript for logic, interaction, DOM manipulation, and API communication.
+          </p>
+        </article>
+        <article class="info-card">
+          <span class="card-icon">🚀</span>
+          <h3>Professional Workflow</h3>
+          <p>
+            The final part introduces TypeScript, version control with Git, GitHub workflow,
+            and deployment through GitHub Pages.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="weekly-plan" class="section alt">
+      <div class="section-title">
+        <p class="eyebrow">Weekly Structure</p>
+        <h2>14-week course roadmap</h2>
+        <p class="section-intro">
+          Use the filter buttons to focus on foundations, HTML/CSS, JavaScript, TypeScript,
+          or deployment topics.
+        </p>
+      </div>
+
+      <div class="filters" aria-label="Week filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="foundation">Foundations</button>
+        <button class="filter-btn" data-filter="html-css">HTML & CSS</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="typescript">TypeScript</button>
+        <button class="filter-btn" data-filter="deployment">Deployment</button>
+      </div>
+
+      <div class="timeline" id="weekTimeline">
+        <article class="week-card" data-category="foundation">
+          <button class="week-header">
+            <span>Week 1</span>
+            <strong>Internet & Web Foundations</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Introduces how the Internet works, client-server communication,
+              DNS, HTTP/HTTPS, static pages, dynamic pages, and the basic path
+              from entering a URL to receiving a webpage.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="foundation">
+          <button class="week-header">
+            <span>Week 2</span>
+            <strong>Modern Web Architecture</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Covers three-tier architecture, RESTful services, JSON versus XML,
+              API-driven applications, and how a webpage can become part of a
+              distributed system.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="html-css">
+          <button class="week-header">
+            <span>Week 3</span>
+            <strong>HTML5 Fundamentals</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Focuses on semantic HTML elements, document structure, forms,
+              validation, multimedia elements, accessibility basics, and writing
+              meaningful page markup.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="html-css">
+          <button class="week-header">
+            <span>Week 4</span>
+            <strong>CSS3 & Responsive Design</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Explains the box model, selectors, typography, colors, Flexbox,
+              CSS Grid, media queries, and how responsive layouts adapt to
+              different screen sizes.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="javascript">
+          <button class="week-header">
+            <span>Week 5</span>
+            <strong>JavaScript Fundamentals</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Introduces JavaScript syntax, variables, data types, operators,
+              template literals, arrow functions, and the role of ES6+ features
+              in modern JavaScript development.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="javascript">
+          <button class="week-header">
+            <span>Week 6</span>
+            <strong>Control Structures & Functions</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Builds programming logic with conditional statements, loops,
+              functions, parameters, return values, scope, hoisting, and basic
+              debugging habits.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="javascript">
+          <button class="week-header">
+            <span>Week 7</span>
+            <strong>Arrays, Objects & Modern JavaScript</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Covers arrays, objects, array methods, destructuring, spread syntax,
+              object manipulation, and using structured data to produce dynamic
+              web content.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="javascript">
+          <button class="week-header">
+            <span>Week 8</span>
+            <strong>DOM Fundamentals</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Connects JavaScript to HTML and CSS through the DOM. Topics include
+              selecting elements, changing content and styles, creating new
+              elements, and updating the page dynamically.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="javascript">
+          <button class="week-header">
+            <span>Week 9</span>
+            <strong>Events & User Interaction</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Explains event listeners, user actions, form events, default browser
+              behavior, event objects, input handling, and building pages that
+              respond to user interaction.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="javascript">
+          <button class="week-header">
+            <span>Week 10</span>
+            <strong>Asynchronous JavaScript & APIs</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Introduces callbacks, promises, async/await, the Fetch API, HTTP
+              requests, REST API consumption, and displaying external data inside
+              a webpage.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="typescript">
+          <button class="week-header">
+            <span>Week 11</span>
+            <strong>Introduction to TypeScript</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Introduces the purpose of TypeScript, basic types, type inference,
+              function typing, interfaces, optional properties, and why type
+              safety helps prevent common JavaScript mistakes.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="typescript">
+          <button class="week-header">
+            <span>Week 12</span>
+            <strong>Applying TypeScript in Practice</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Applies TypeScript to realistic front-end tasks, including typed
+              API responses, typed objects and arrays, safe DOM manipulation,
+              and an overview of TypeScript tooling.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="deployment">
+          <button class="week-header">
+            <span>Week 13</span>
+            <strong>Version Control & Deployment</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Covers Git fundamentals, commits, branches, merging, GitHub workflow,
+              repositories, pull requests, project history, and hosting static
+              websites through GitHub Pages.
+            </p>
+          </div>
+        </article>
+
+        <article class="week-card" data-category="deployment">
+          <button class="week-header">
+            <span>Week 14</span>
+            <strong>Integration, Review & Final Project Support</strong>
+          </button>
+          <div class="week-body">
+            <p>
+              Connects all course topics into a complete website project:
+              structure, styling, interactivity, data use, version control,
+              publishing, documentation, and final quality checks.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-title">
+        <p class="eyebrow">Learning Outcomes</p>
+        <h2>Core skills developed</h2>
+      </div>
+
+      <div class="skill-board">
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="meter"><span style="width: 90%"></span></div>
+          <p>Semantic page structure, forms, validation, media, and accessibility basics.</p>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="meter"><span style="width: 88%"></span></div>
+          <p>Responsive layouts with Flexbox, Grid, media queries, and clean visual design.</p>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="meter"><span style="width: 92%"></span></div>
+          <p>Programming logic, DOM updates, events, asynchronous operations, and APIs.</p>
+        </div>
+        <div class="skill">
+          <h3>TypeScript</h3>
+          <div class="meter"><span style="width: 72%"></span></div>
+          <p>Typed variables, interfaces, API response models, and safer application code.</p>
+        </div>
+        <div class="skill">
+          <h3>Git & Deployment</h3>
+          <div class="meter"><span style="width: 80%"></span></div>
+          <p>Repository workflow, branching, commits, collaboration, and GitHub Pages hosting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="labs" class="section alt">
+      <div class="section-title">
+        <p class="eyebrow">Practice Direction</p>
+        <h2>Recommended lab progression</h2>
+      </div>
+
+      <div class="lab-layout">
+        <article class="lab-card">
+          <h3>Early Labs</h3>
+          <p>
+            Build structured pages, inspect websites with browser DevTools,
+            create forms, and design responsive layouts.
+          </p>
+        </article>
+        <article class="lab-card">
+          <h3>Middle Labs</h3>
+          <p>
+            Add JavaScript logic, work with arrays and objects, update the DOM,
+            and create realistic user interaction.
+          </p>
+        </article>
+        <article class="lab-card">
+          <h3>Advanced Labs</h3>
+          <p>
+            Fetch external API data, type data models with TypeScript, manage
+            a Git workflow, and publish the finished site.
+          </p>
+        </article>
+      </div>
+
+      <div class="code-preview">
+        <div class="code-header">
+          <span>Mini Example</span>
+          <button id="copyCodeBtn">Copy</button>
+        </div>
+        <pre><code id="sampleCode">fetch("https://api.example.com/items")
+  .then(response =&gt; response.json())
+  .then(data =&gt; {
+    console.log("Received data:", data);
+  })
+  .catch(error =&gt; {
+    console.error("API request failed:", error);
+  });</code></pre>
+      </div>
+    </section>
+
+    <section id="project" class="section project-section">
+      <div class="project-card">
+        <p class="eyebrow">Final Output</p>
+        <h2>Suggested final project</h2>
+        <p>
+          The final project should be a published, responsive, interactive website
+          that uses HTML, CSS, JavaScript, and API-based data. The project should
+          be managed with Git and hosted using GitHub Pages.
+        </p>
+        <div class="project-checklist">
+          <label><input type="checkbox" /> Semantic HTML structure</label>
+          <label><input type="checkbox" /> Responsive CSS layout</label>
+          <label><input type="checkbox" /> JavaScript interactivity</label>
+          <label><input type="checkbox" /> API-based data access</label>
+          <label><input type="checkbox" /> GitHub repository</label>
+          <label><input type="checkbox" /> Published GitHub Pages link</label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Internet Programming Course Summary Website</p>
+    <button id="backToTop">Back to top ↑</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
